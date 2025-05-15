@@ -77,7 +77,7 @@ header ul {
     flex-direction: row;
 }
 
-ul li {
+nav li {
     padding: 10px;
     font-weight: 200;
 }
@@ -146,6 +146,10 @@ h1 {
     padding: 15px;
 }
 
+.search button:hover {
+    cursor: pointer;
+}
+
 .titre-filtre {
     font-weight: 600;
 }
@@ -154,6 +158,10 @@ h1 {
     display: flex;
     align-items: center;
     margin-bottom: 30px;
+}
+
+.barre-filtre span {
+    margin-right: 10px;
 }
 
 .liste-filtre {
@@ -165,7 +173,7 @@ h1 {
 
 .liste-filtre a {
     font-weight: 600;
-    padding: 12px;
+    padding: 12px 20px;
     border: #F2F2F2 2px solid;
     border-radius: 30px;
 }
@@ -343,7 +351,6 @@ p .fa-solid {
     width: 100%;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
-    box-sizing: border-box;
 }
 
 .activites-cards .card-content {
@@ -371,6 +378,10 @@ footer {
 footer ul {
     list-style: none;
     padding-left: 0px;
+}
+
+footer li {
+    padding-bottom: 5px;
 }
 
 footer strong {
@@ -412,9 +423,78 @@ footer strong {
     .populaires-cards .card-subtitle {
         font-size: 13px;
     }
+
+    .activites-cards img {
+        height: 250px;
+    }
+
+    .footer-list {
+        gap: 80px;
+    }
 }
 
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
-    /* ... */
+    header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header ul {
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+    }
+
+    nav li {
+        padding-left: 0px;
+    }
+
+    nav a {
+        display: flex;
+        justify-content: center;
+    }
+
+    nav li a:hover {
+        border-top: none;
+        border-bottom: 2px solid #0065FC;
+        padding-bottom: 15px;
+    }
+
+    .hebergements-and-populaires {
+        flex-direction: column-reverse;
+    }
+
+    .hebergements-cards {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(6, auto);
+        gap: 20px;
+    }
+
+    .populaires-cards {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .populaires-cards a {
+        width: 100%;
+    }
+
+    .activites-cards {
+        grid-template-rows: repeat(4, 1fr);
+        grid-template-columns: repeat(1, 1fr);
+        gap: 10px;
+    }
+
+    .footer-list {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    footer li {
+        padding-bottom: 2px;
+    }
 }
