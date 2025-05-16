@@ -16,6 +16,7 @@
 body {
     display: flex;
     justify-content: center;
+    margin-top: 0px;
 }
 
 .main-container {
@@ -68,30 +69,32 @@ header {
     display: flex;
     justify-content: space-between;
     flex-direction: row;
-    align-items: baseline;
 }
 
 header ul {
     list-style: none;
     display: flex;
     flex-direction: row;
+    padding: 0px;
+    margin: 0px;
 }
 
 nav li {
-    padding: 10px;
-    font-weight: 200;
+    padding-left: 60px;
+    padding-top: 20px;
+    font-weight: 300;
 }
 
 nav li a:hover {
     border-top: 2px solid #0065FC;
-    padding-top: 15px;
+    padding-top:18px;
 }
 
 .logo {
     width: 60px;
     height: auto;
-    margin-top: 15px;
-    margin-bottom: 15px;
+    margin-top: 30px;
+    margin-bottom: 40px;
 }
 
 /****** bandeau-principal ***********/
@@ -166,9 +169,10 @@ h1 {
 
 .liste-filtre {
     margin: 0;
-    padding: 0;
+    padding: 0px;
     display: flex;
     list-style: none;
+    gap: 15px;
 }
 
 .liste-filtre a {
