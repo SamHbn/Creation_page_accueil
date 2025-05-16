@@ -255,9 +255,22 @@ input[type="search"]::-webkit-search-cancel-button {
     box-sizing: border-box;
 }
 
+.card-subtitle {
+    font-size: smaller;
+}
+
+.card-rating i {
+    letter-spacing: -4px;
+}
+
 /****** Hebergements ***********/
 .hebergements {
     width: 65%;
+}
+
+.hebergements p {
+    margin-top: 0px;
+    margin-bottom: 0px;
 }
 
 .hebergements-title {
@@ -267,11 +280,11 @@ input[type="search"]::-webkit-search-cancel-button {
 }
 
 .hebergements-cards {
-    margin-top: 33px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, auto);
-    gap: 30px;
+    margin-top: 33px;
+    gap: 33px;
 }
 
 .hebergements-cards .card {
@@ -289,7 +302,8 @@ input[type="search"]::-webkit-search-cancel-button {
 }
 
 .hebergements-cards .card-content {
-    padding-left: 10px;
+    height: 100%;
+    padding-left: 15px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -298,16 +312,12 @@ input[type="search"]::-webkit-search-cancel-button {
 
 .hebergements-cards .card-title {
     margin-top: 10px;
-    margin-bottom: 0;
-}
-
-.hebegements-cards .card-subtitle {
-    margin: 0;
+    margin-bottom: 10px;
 }
 
 .hebergements-cards .card-rating {
+    font-size: 1.1em;
     margin-bottom: 5px;
-    font-size: 0.9em;
 }
 
 .hebergements-plus {
