@@ -101,13 +101,13 @@ nav li a:hover {
 
 h1 {
     margin-top: 20px;
-    margin-bottom: 0px;
+    margin-bottom: 8px;
     font-size: 22px;
     font-weight: 700;
 }
 
-.bandeau-principal p {
-    margin-top: 8px;
+.bandeau-principal .sous-titre {
+    margin-top: 0px;
     margin-bottom: 35px;
     font-weight: 300;
 }
@@ -115,7 +115,7 @@ h1 {
 .search {
     display: flex;
     align-items: center;
-    margin-bottom: 40px;
+    margin-bottom: 35px;
 }
 
 .icon-search .fa-solid {
@@ -171,16 +171,17 @@ input[type="search"]::-webkit-search-cancel-button {
 
 .titre-filtre {
     font-weight: 600;
+    font-size: large;
 }
 
 .barre-filtre {
     display: flex;
     align-items: center;
-    margin-bottom: 30px;
+    margin-bottom: 35px;
 }
 
 .barre-filtre span {
-    margin-right: 10px;
+    margin-right: 20px;
 }
 
 .liste-filtre {
@@ -192,10 +193,20 @@ input[type="search"]::-webkit-search-cancel-button {
 }
 
 .liste-filtre a {
+    display: flex;
+    align-items: center;
     font-weight: 600;
+    font-size: medium;
     padding: 12px 20px;
     border: #F2F2F2 2px solid;
     border-radius: 30px;
+}
+
+.fa-money-bill-wave,
+.fa-person,
+.fa-heart,
+.fa-fire {
+    font-size: 1.4em;
 }
 
 .liste-filtre a:hover {
@@ -206,9 +217,20 @@ input[type="search"]::-webkit-search-cancel-button {
     padding-right: 10px;
 }
 
-p .fa-solid {
+.ligne-info {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 35px;
+    align-items: center;
+}
+
+.ligne-info p {
+    margin: 0px;
+}
+
+.ligne-info .fa-solid {
     color: #0065FC;
-    font-size: 0.9em;
+    font-size: 0.8em;
     border: #F2F2F2 1px solid;
     border-radius: 50%;
     width: 25px;
@@ -217,7 +239,7 @@ p .fa-solid {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    margin-right: 6px;
+    margin-right: 10px;
 }
 
 /****** Hebergements And Populaires ***********/
