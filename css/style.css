@@ -100,11 +100,16 @@ nav li a:hover {
 /****** bandeau-principal ***********/
 
 h1 {
+    margin-top: 20px;
     margin-bottom: 0px;
+    font-size: 22px;
+    font-weight: 700;
 }
 
 .bandeau-principal p {
+    margin-top: 8px;
     margin-bottom: 40px;
+    font-weight: 300;
 }
 
 .search {
