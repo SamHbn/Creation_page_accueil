@@ -23,6 +23,7 @@ body {
 .main-container {
     width: 100%;
     max-width: 1440px;
+    min-width: 320px;
     padding: 0 50px;
     box-sizing: border-box;
 }
@@ -97,7 +98,7 @@ nav a {
 }
 
 nav li:hover {
-    border-top: 2px solid #0065FC;
+    border-top: 2px solid var(--main-color);
     padding-top:18px;
 }
 
@@ -122,10 +123,18 @@ h1 {
     margin-bottom: 35px;
 }
 
+.icon-search .fa-solid,
+.search input,
+.search .btn-icon {
+  height: 50px;
+  display: flex;
+  align-items: center;
+}
+
 .icon-search .fa-solid {
     color: black;
     font-size: 1.2em;
-    background-color: #F2F2F2;
+    background-color: var(--main-bg-color);
     border-radius: 16px 0 0 16px;
     padding: 0px 18px 0 18px;
 }
@@ -134,25 +143,17 @@ h1 {
     text-align: center;
     font-weight: 600;
     font-size: large;
-    border: #F2F2F2 solid 1px;
+    border: var(--main-bg-color) solid 1px;
 }
 
 input[type="search"]::-webkit-search-cancel-button {
     display: none;
     -webkit-appearance: none;
-  }
+}
 
 .search input::placeholder {
     color: black;
     opacity: 1;
-  }
-
-.search input,
-.search button,
-.search .fa-solid {
-  height: 50px;
-  display: flex;
-  align-items: center;
 }
 
 #search-bar:focus {
@@ -160,13 +161,17 @@ input[type="search"]::-webkit-search-cancel-button {
 }
 
 .search button {
-    background-color: #0065FC;
+    background-color: var(--main-color);
     border-radius: 0 16px 16px 0;
     color: white;
     font-weight: 600;
     font-size: large;
     border: none;
     padding: 15px;
+}
+
+.search .btn-icon {
+    display: none;
 }
 
 .search button:hover {
@@ -202,7 +207,7 @@ input[type="search"]::-webkit-search-cancel-button {
     font-weight: 600;
     font-size: medium;
     padding: 10px 14px;
-    border: #F2F2F2 2px solid;
+    border: var(--main-bg-color) 2px solid;
     border-radius: 30px;
 }
 
@@ -233,9 +238,9 @@ input[type="search"]::-webkit-search-cancel-button {
 }
 
 .ligne-info .fa-solid {
-    color: #0065FC;
+    color: var(--main-color);
     font-size: 0.8em;
-    border: #F2F2F2 1px solid;
+    border: var(--main-bg-color) 1px solid;
     border-radius: 50%;
     width: 25px;
     height: 25px;
@@ -427,7 +432,7 @@ input[type="search"]::-webkit-search-cancel-button {
 /****** Footer ***********/
 
 footer {
-    background-color: #F2F2F2;
+    background-color: var(--main-bg-color);
     margin-bottom: 0px;
 }
 
@@ -559,11 +564,21 @@ footer strong {
     }
 
     nav a:hover {
-        border-bottom: 2px solid #0065FC;
+        border-bottom: 2px solid var(--main-color);
     }
 
     .bandeau-principal {
         padding: 0 20px;
+    }
+
+    .search .btn-text {
+        display: none;
+    }
+
+    .search .btn-icon {
+        display: inline;
+        font-size: 1.2rem;
+        color: white;
     }
 
     .liste-filtre {
@@ -571,7 +586,6 @@ footer strong {
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(2, auto);
     }
-
 
     .hebergements-and-populaires section {
         border-radius: 0px;
