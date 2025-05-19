@@ -198,7 +198,7 @@ input[type="search"]::-webkit-search-cancel-button {
     align-items: center;
     font-weight: 600;
     font-size: medium;
-    padding: 12px 20px;
+    padding: 10px 14px;
     border: #F2F2F2 2px solid;
     border-radius: 30px;
 }
@@ -455,6 +455,16 @@ footer strong {
 /****** Media queries ***********/
 /* Medium devices (tablets, less/equal than 1024px) */
 @media (max-width: 1024px) {
+    .barre-filtre {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .titre-filtre {
+        margin-bottom: 20px;
+    }
+
     .hebergements-and-populaires {
         flex-direction: column;
     }
