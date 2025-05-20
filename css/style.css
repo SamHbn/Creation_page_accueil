@@ -91,13 +91,10 @@ header ul {
 nav li {
     font-weight: 300;
     padding-top: 20px;
-}
-
-nav a {
     padding-left: 60px;
 }
 
-nav li:hover {
+nav a:hover {
     border-top: 2px solid var(--main-color);
     padding-top:18px;
 }
@@ -550,12 +547,12 @@ footer strong {
         padding-top: 0px;
     }
 
-    nav li:hover {
+    nav a:hover {
         border-top: none;
         padding-top: 0px;
     }
 
-    nav a {
+    nav li {
         width: 100%;
         display: flex;
         justify-content: center;
@@ -563,7 +560,7 @@ footer strong {
         padding-bottom: 18px;
     }
 
-    nav a:hover {
+    nav li:hover {
         border-bottom: 2px solid var(--main-color);
     }
 
