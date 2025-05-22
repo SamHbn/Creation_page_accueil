@@ -73,19 +73,19 @@ header {
     flex-direction: row;
 }
 
-header ul {
-    list-style: none;
-    display: flex;
-    flex-direction: row;
-    padding: 0px;
-    margin: 0px;
-}
-
 .logo {
     width: 60px;
     height: auto;
     margin-top: 30px;
     margin-bottom: 40px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    padding: 0px;
+    margin: 0px;
 }
 
 nav li {
@@ -234,7 +234,7 @@ input[type="search"]::-webkit-search-cancel-button {
     margin: 0px;
 }
 
-.ligne-info .fa-solid {
+.ligne-info .fa-info {
     color: var(--main-color);
     font-size: 0.8em;
     border: var(--main-bg-color) 1px solid;
@@ -242,7 +242,7 @@ input[type="search"]::-webkit-search-cancel-button {
     width: 25px;
     height: 25px;
     background-color: white;
-    display: inline-flex;
+    display: flex;
     align-items: center;
     justify-content: center;
     margin-right: 10px;
@@ -272,11 +272,6 @@ input[type="search"]::-webkit-search-cancel-button {
 /****** Hebergements ***********/
 .hebergements {
     width: 65%;
-}
-
-.hebergements p {
-    margin-top: 0px;
-    margin-bottom: 0px;
 }
 
 .hebergements-title {
@@ -322,7 +317,8 @@ input[type="search"]::-webkit-search-cancel-button {
     justify-content: space-evenly;
 }
 
-.hebergements-cards .card-title {
+.hebergements-cards .card-title,
+.hebergements-cards .card-subtitle {
     margin-top: 0px;
     margin-bottom: 0px;
 }
@@ -536,7 +532,7 @@ footer strong {
         width: 100%;
     }
 
-    header ul {
+    nav ul {
         width: 100%;
         display: flex;
         flex-direction: row;
@@ -544,20 +540,17 @@ footer strong {
     }
 
     nav li {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        padding-left: 0px;
         padding-top: 0px;
+        padding-bottom: 18px;
     }
 
     nav a:hover {
         border-top: none;
         padding-top: 0px;
-    }
-
-    nav li {
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        padding-left: 0px;
-        padding-bottom: 18px;
     }
 
     nav li:hover {
